@@ -357,7 +357,7 @@ defmodule DateFormatTest.FormatDefault do
     date = Timex.to_datetime({{2014, 9, 26}, {7, 0, 2}}, "Europe/Copenhagen")
     assert format(date, "{RFC3339}") == {:ok, "2014-09-26T07:00:02+02:00"}
     date = Timex.to_datetime({{10, 9, 26}, {7, 0, 2}}, "Europe/Copenhagen")
-    assert format(date, "{RFC3339}") == {:ok, "0010-09-26T07:00:02+00:50"}
+    assert format(date, "{RFC3339}") == {:ok, "0010-09-26T07:00:02+00:53"}
   end
 
   test "format ANSIC" do
