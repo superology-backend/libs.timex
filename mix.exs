@@ -1,7 +1,7 @@
 defmodule Timex.Mixfile do
   use Mix.Project
 
-  @version "3.7.11"
+  @version "3.7.11-depsfix"
 
   def project do
     [
@@ -57,7 +57,7 @@ defmodule Timex.Mixfile do
     [
       {:tzdata, "~> 1.1"},
       {:combine, "~> 0.10"},
-      {:gettext, "~> 0.20"},
+      {:gettext, "~> 0.25.0"},
       {:ex_doc, "~> 0.13", only: [:docs]},
       {:benchfella, "~> 0.3", only: [:bench]},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
